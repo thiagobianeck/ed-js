@@ -62,12 +62,28 @@ numbers.pop();
 numbers.pop();
 numbers.pop();
 numbers.pop();
+numbers.pop();
+numbers.pop();
 
 numbers.shift();
 numbers.shift();
 numbers.shift();
 numbers.shift();
-numbers.shift();
+
+// no splice o primeiro parâmetro é exclusivo, ou seja: a partir do 3 elemento
+// ou seja, no comando abaixo, a partir da 3ª posição do array
+// a partir do terceiro item, exclua 3 itens do array
+numbers.splice(3,3);
+
+console.log(numbers);
+
+let numbersToAdd = [3,4,5];
+
+//inserir elementos com o splice da mesma maneira
+// a partir da 3ª posição do array, '0' sem excluir nenhum elemento, insira os numeros, 3,4 e 5
+
+// usei o spread operator (...) para retirar os itens de dentro do array que havia estabelecido em numbersToAdd
+numbers.splice(3, 0, ...numbersToAdd);
 
 console.log(numbers);
 
