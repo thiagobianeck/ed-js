@@ -42,3 +42,19 @@ function Stack() {
 
 
 }
+
+let pilha = new Stack();
+
+pilha.push(2);
+pilha.push(4);
+pilha.push(6);
+pilha.push(8);
+pilha.push(10);
+
+console.log(pilha.peek());
+
+// pilha.clear();
+
+// console.log(pilha.isEmpty());
+
+pilha.print();
