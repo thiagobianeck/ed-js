@@ -57,7 +57,17 @@ numbers.unshift(-2);
 numbers.unshift(-3);
 numbers.unshift(-4);
 
-numbers[0] = -40;
+
+numbers.pop();
+numbers.pop();
+numbers.pop();
+numbers.pop();
+
+numbers.shift();
+numbers.shift();
+numbers.shift();
+numbers.shift();
+numbers.shift();
 
 console.log(numbers);
 
